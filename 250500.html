@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Silva</title>
+  <link rel="shortcut icon" href="silva2.jpeg"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css">
+  <style>
+    /* Gaya dasar */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    header,
+    main,
+    aside,
+    footer {
+      padding: 20px;
+    }
+
+    /* Gaya Header */
+    header {
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 200px;
+      border-radius: 50%;
+    }
+
+    /* Gaya Konten */
+    #ucapan {
+      text-align: center;
+    }
+
+    #ucapan textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    #kenangan {
+      position: relative;
+      width: 100%;
+      height: 600px; /* Atur tinggi sesuai kebutuhan */
+      overflow: hidden;
+    }
+
+    .kenangan-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      width: 100%;
+      height: 100%; /* Atur tinggi dan lebar sesuai kebutuhan */
+    }
+
+    .kenangan-item.active {
+      opacity: 1;
+    }
+
+    .kenangan-item img {
+      width: 100%;
+      height: 100%; /* Atur tinggi dan lebar sesuai kebutuhan */
+      object-fit: cover; /* Agar gambar mengisi seluruh ruang */
+      border-radius: 5px;
+    }
+
+    .kenangan-item .carousel-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .carousel-caption {
+        text-align: center;
+    }
+
+    /* Gaya Sidebar */
+    #sidebar {
+      text-align: center;
+    }
+
+    #sidebar img {
+      max-width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    /* Gaya Footer */
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    /* Gaya Responsif */
+    @media screen and (min-width: 768px) {
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      main {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hide">
+    <h1>Selamat Ulang Tahun Silva Hamidah</h1>
+    <img src="silva1.png" alt="Foto Teman">
+  </header>
+
+  <main class="hide">
+    <section id="ucapan">
+        <p>Selamat ulang tahun silva sayang! Semoga panjang umur, sehat selalu, makin cantik, doa aku yg terbaik buat kamu.. Semangat yaa dalam menjalani kehidupan ini.. semangat kerjanya nabung bantu aku biar kita cepet nikah wkwk.. nurut sama mamah ayah yaa jan bandel kamu nii... sama aku jugaa akur-akur terus yaa jan bosen okee.. Lopuuuuuuu</p>
+    </section>
+    <section id="kenangan">
+      <h2>Momen-momen Berharga</h2>
+      <div class="kenangan-item active">
+        <img src="silva3.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Silp Gemoy Nii</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="silva4.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Lagi mam apa hayoo</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="5.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Silpa mode jamet part 1</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="51.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Silpa mode jamet part 2</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="52.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Silpa mode jamet part 2</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="6.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Kalo ini silpa lagi prikkk</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="7.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Ini gatau gaya apa</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="8.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Ini cakep pokonyaa</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="9.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Ini juga jamet sidempuan</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="10.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Silpa di ancol</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="11.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Cantikk</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="12.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Silpa aku wisuda</p>
+        </div>
+      </div>
+      <div class="kenangan-item">
+        <img src="13.jpeg" alt="Kenangan 1">
+        <div class="carousel-caption">
+          <p>Rekap pap pacar aku</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="hide">
+    <p>dibuat dengan 💜 oleh fadiel pacarnya silpa</p>
+    <p>maaf hasilnya masih kurang bagus dan kreatif wkwk ni dibuat ditengah kesibukan pekerjaan dikantor :) semoga suka yaa </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      // Menghilangkan class "hide" saat dokumen siap
+      const hideElements = document.querySelectorAll('.hide');
+      hideElements.forEach(function(element) {
+        element.classList.add('hidden');
+      });
+
+      Swal.fire({
+        title: 'Selamat Ulang Tahun',
+        text: 'Silva Hamidah, 25-05-2023',
+        iconHtml: '<img src="birthday.avif" alt="Icon" style="width: 150px; height: auto; border-radius:10px;">',
+        confirmButtonText: 'Lanjut',
+        allowOutsideClick: false,
+      }).then(function(result) {
+        if (result.isConfirmed) {
+          let audio1 = new Audio('http://sndup.net/x2rr/d'); // Ganti URL dengan sumber audio yang valid
+          audio1.play();
+          setTimeout(function() {
+            Swal.fire({
+              title: 'Dari Ayangmu',
+              text: 'Volume nya naikin yaa.. Dengerin ini dulu kalau udah bisa lanjut',
+              iconHtml: '<img src="fdlultah.png" alt="Icon" style="width: 120px; height: auto; border-radius:10px;">',
+              confirmButtonText: 'Sudah',
+              allowOutsideClick: false,
+            }).then(function(result) {
+              if (result.isConfirmed) {
+                audio1.pause();
+                let audio2 = new Audio('http://sndup.net/fqt3/d'); // Ganti URL dengan sumber audio yang valid
+                audio2.play();
+                // Menampilkan kembali class "hide" setelah SweetAlert2 diklik
+                hideElements.forEach(function(element) {
+                  element.classList.remove('hidden');
+                });
+                carousel()
+              }
+            });
+          }, 3000);
+          
+        }
+      });
+    });
+
+    // JavaScript untuk mengatur carousel
+    function carousel() {
+      const carouselItems = document.querySelectorAll(".kenangan-item");
+      const totalItems = carouselItems.length;
+      const carouselInterval = 3000; // Waktu tampilan tiap slide (ms)
+      let currentItem = 0;
+
+      // Menampilkan slide berikutnya
+      function showNextSlide() {
+        carouselItems[currentItem].classList.remove("active");
+        currentItem = (currentItem + 1) % totalItems;
+        carouselItems[currentItem].classList.add("active");
+      }
+
+      // Mengatur tinggi slide sesuai tinggi container
+      function setSlideHeight() {
+        const containerHeight = document.getElementById("kenangan").clientHeight;
+        carouselItems.forEach(function (item) {
+          item.style.height = `${containerHeight}px`;
+        });
+      }
+
+      // Memulai carousel
+      setSlideHeight(); // Set tinggi slide saat halaman dimuat
+      let timer = setInterval(showNextSlide, carouselInterval);
+
+      // Mengatur ulang tinggi slide saat ukuran jendela berubah
+      window.addEventListener("resize", setSlideHeight);
+
+      // Menghentikan carousel saat kursor masuk
+      document.getElementById("kenangan").addEventListener("mouseenter", function () {
+        clearInterval(timer);
+      });
+
+      // Memulai kembali carousel saat kursor keluar
+      document.getElementById("kenangan").addEventListener("mouseleave", function () {
+        timer = setInterval(showNextSlide, carouselInterval);
+      });
+    };
+  </script>
+</body>
+
+</html>
